@@ -1,0 +1,77 @@
+/* first table  */
+.descriptionCard {
+    padding: 0;
+    margin: 0;
+    font-size: 0.75vw; /* 0.9rem * 0.833 */
+    font-weight: 400;
+    color: rgba(88, 88, 88, 1);
+    font-family: 'Open Sans', sans-serif;
+    border: 1px solid rgba(209, 209, 209, 1);
+}
+
+.descriptionCard h5 {
+    margin-top: 12.5px; /* 15px * 0.833 */
+    font-size: 0.89vw; /* 0.9rem * 0.833 */
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.descriptionCard p {
+    padding: 4.165px; /* 5px * 0.833 */
+    margin: 0;
+    font-size: 0.800vw; /* 0.82rem * 0.833 */
+    font-weight: 600;
+    color: rgba(109, 109, 109, 1);
+    font-family: 'Open Sans', sans-serif;
+}
+
+.descriptionCard1 h1 {
+    padding: 4.165px; /* 5px * 0.833 */
+    margin: 0;
+    font-size: 0.75vw; /* 0.9rem * 0.833 */
+    font-weight: 600;
+    color: rgb(255, 0, 0);
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+
+/* +++++++++++++++++++++++++++++++++++++++++++ */
+
+/* last table  */
+table.center {
+    width: 100vw; /* Full viewport width */
+    border-collapse: collapse;
+    margin-left: 0%;
+}
+
+table.center th, table.center td {
+    border: 1px solid #ccc;
+}
+
+hr.solid {
+    border-top: 1px solid #ccc;
+    margin: 0;
+}
+
+tr td p {
+    margin: 4.165px; /* 5px * 0.833 */
+    padding: 2.499%; /* 3% * 0.833 */
+    font-size: 0.880vw; /* 0.8rem * 0.833 */
+    font-weight: 600;
+    color: rgba(109, 109, 109, 1);
+    font-family: 'Open Sans', sans-serif;
+}
+
+tr td h5 {
+    margin: 4.165px; /* 5px * 0.833 */
+    padding: 2.499%; /* 3% * 0.833 */
+    font-size: 3.332vw; /* 4rem * 0.833 */
+    font-weight: 600;
+    color: rgb(0, 0, 0);
+    font-family: 'Open Sans', sans-serif;
+}
+
+
+/* table 3 */

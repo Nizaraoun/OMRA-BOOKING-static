@@ -1,0 +1,320 @@
+.filtre{
+    padding-left: 20px ;
+    padding-bottom: 20px ;
+}
+.filtre div h6{
+    font-size: 1vw;
+    font-weight: 400;
+    color: rgba(0, 0, 0, 1);
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    background-color: rgba(247, 228, 186, 1);
+    border-radius: 20px ;
+    padding: 8px; ;
+    border: 3px solid rgba(204, 174, 105, 1);
+    text-align: center;
+}
+.hotel-description {
+    display: flex;
+    justify-content: space-between; /* To keep space between inner items */
+    align-items: center; /* Center inner items vertically if needed */
+    padding: 10px;
+}
+
+
+.containerHotel{
+    height: 110vh; 
+    margin-right: 0.2vw;
+    border-radius: 10px;
+    
+    
+}
+.hotel-description img{
+    width: 100%;
+    height:25vh;
+    border-radius: 10px;
+    
+}
+.room-card {
+    padding: 20px;
+    max-width: 90vh;
+    font-family: Arial, sans-serif;
+    background-color: #fff;
+    padding-top: 5px!important;
+    border: 3px solid rgba(255, 255, 255, 1)!important;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+}
+
+.room-title {
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+.room-subtitle {
+    font-size: 0.85vw;
+    color: #777;
+}
+
+.rating {
+    display: flex;
+    align-items: center;
+    margin-top: 10px;
+}
+
+.rating-badge {
+    background-color: rgba(198, 147, 32, 1);
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-weight: bold;
+    margin-right: 10px;
+}
+
+.rating-text {
+    font-weight: bold;
+    margin-right: 5px;
+}
+
+.reviews {
+    color: #777;
+}
+
+.features {
+    margin-top: 20px;
+}
+
+.features h3 {
+    font-size: 1vw;
+    margin-bottom: 10px;
+    font-weight: 600;
+
+}
+
+.features ul {
+    list-style: none;
+    padding: 0;
+}
+
+.features li {
+    margin-bottom: 5px;
+    font-size: 0.8vw; 
+    font-weight: 400;
+
+}
+
+
+.more-details {
+    color: #b8860b;
+    font-weight: bold;
+    text-decoration: none;
+    margin-left: auto;
+
+}
+
+.cancellation-policy {
+    margin-top: 20px;
+}
+
+.cancellation-policy h3 {
+    font-size: 1vw;
+    margin-bottom: 5px;
+    font-family: 'Open Sans', sans-serif;
+    font-weight: 700;
+}
+.cancellation-policy p{
+    font-size: 0.7vw;
+    margin-bottom: 5px;
+    color:  rgba(39, 39, 39, 1);
+    font-family: 'Open Sans', sans-serif;
+
+    
+}
+.policy-option , .extra-option label{
+    font-size: 0.85vw;
+    color:  rgba(39, 39, 39, 1);
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 10px; ;
+    font-weight: 500;
+
+}
+
+.policy-option {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.policy-option input {
+    margin-right: 10px;
+}
+
+.policy-price {
+    margin-left: auto;
+}
+
+.extras {
+    margin-top: 20px;
+}
+
+.extras h3 {
+    font-size: 1vw;
+    margin-bottom: 5px;
+    font-weight: 700;
+    font-family: 'Open Sans', sans-serif;
+
+}
+
+.extra-option {
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+
+.extra-option input {
+    margin-right: 10px;
+}
+
+.extra-price {
+    margin-left: auto;
+}
+
+.price-section {
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+    text-align: right;
+}
+
+.total-price {
+    font-size: 1vw;
+    font-weight: bold;
+}
+
+.price-and-book-section {
+    display: flex;
+    justify-content: space-between;
+    align-items: end;
+    margin-top: 20px;
+    border-top: 1px solid #ddd;
+    padding-top: 10px;
+}
+
+.price-details {
+    text-align: left;
+}
+.price-details p{
+    font-size: 0.7vw;
+    margin-bottom: 5px;
+}
+.price-details-link{
+    color: #b8860b;
+    font-weight:  700;
+    font-size: 0.8vw ;
+}
+
+.book-button {
+    padding: 7px 25px;
+    background-color: #000;
+    color: #fff;
+    border: none;
+    font-size: 1vw;
+    cursor: pointer;
+    border-radius: 10px ;
+}
+
+.book-button:hover {
+    background-color: #444;
+}
+
+/*  reponsive code for card  */
+/* Responsive Styles */
+@media (max-width: 768px) {
+    .room-title {
+        font-size: 1.5rem; /* Increase size for smaller screens */
+    }
+
+    .room-subtitle {
+        font-size: 1.2rem; /* Increase size for smaller screens */
+    }
+
+    .rating-badge {
+        font-size: 1rem; /* Adjust size for smaller screens */
+    }
+
+    .rating-text {
+        font-size: 1rem; /* Adjust size for smaller screens */
+    }
+
+    .reviews {
+        font-size: 0.9rem; /* Adjust size for smaller screens */
+    }
+
+    .features h3,
+    .cancellation-policy h3,
+    .extras h3 {
+        font-size: 1.5rem; /* Increase size for smaller screens */
+    }
+
+    .features li,
+    .policy-option label,
+    .extra-option label {
+        font-size: 1rem; /* Adjust size for smaller screens */
+    }
+
+    .price-section {
+        text-align: left; /* Align text to left for better visibility */
+    }
+
+    .book-button {
+        padding: 10px 15px; /* Adjust padding for smaller screens */
+        font-size: 1.2rem; /* Increase button text size */
+    }
+}
+
+@media (max-width: 480px) {
+    .room-title {
+        font-size: 1.3rem; /* Further decrease size for very small screens */
+    }
+
+    .room-subtitle {
+        font-size: 1rem; /* Further decrease size for very small screens */
+    }
+
+    .rating-badge {
+        font-size: 0.9rem; /* Adjust size for very small screens */
+    }
+
+    .rating-text {
+        font-size: 0.9rem; /* Adjust size for very small screens */
+    }
+
+    .reviews {
+        font-size: 0.8rem; /* Adjust size for very small screens */
+    }
+
+    .features h3,
+    .cancellation-policy h3,
+    .extras h3 {
+        font-size: 1.2rem; /* Decrease size for very small screens */
+    }
+
+    .features li,
+    .policy-option label,
+    .extra-option label {
+        font-size: 0.9rem; /* Adjust size for very small screens */
+    }
+
+    .total-price {
+        font-size: 1.5rem; /* Increase total price size */
+    }
+
+    .price-details {
+        font-size: 0.9rem; /* Decrease price details size */
+    }
+
+    .book-button {
+        padding: 8px 20px; /* Further adjust padding for very small screens */
+        font-size: 1rem; /* Adjust button text size for small screens */
+    }
+}

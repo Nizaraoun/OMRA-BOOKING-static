@@ -1,0 +1,33 @@
+.search-bar {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    padding: 10px;
+    border-radius: 8px;
+    
+  }
+  
+  .input-group {
+    display: flex;
+    align-items: center;
+    background-color: #fff;
+    border-radius: 8px;
+    padding: 8px;
+    flex: 1;
+  }
+
+  .location-input, .calendar-input, .room-input {
+    border: none;
+    background: none;
+    outline: none;
+    padding: 3px;
+    flex: 1; 
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .room-input {
+    cursor: pointer;
+  }
+  
+  

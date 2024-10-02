@@ -1,0 +1,300 @@
+/* Navbar Container */
+.navbar {
+    margin: 0;
+    padding: 0;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+    background-color: rgba(242, 242, 242, 1);
+    height: 12vh;
+    color: rgb(0, 0, 0); /* Change text color to white for contrast */
+}
+
+
+/* Sticky Navbar when Scrolling */
+.navbar.sticky {
+    background-color: #060056ea;
+    color: black;
+    box-shadow: 0 4px 2px -2px gray;
+}
+
+/* Flexbox Layout for Navbar */
+.menu-area {
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the content horizontally */
+    width: 100%; /* Make the menu-area take up the full width */
+    padding-left: 5px;
+}
+
+/* Logo Alignment */
+.logo-area {
+    flex: 0 1 auto;
+    margin-right: 20px;
+    width: 100px; 
+    height: 60px;
+}
+
+.logo-area img {
+    max-height: 55px;
+}
+
+/* Navbar Links */
+.tj-menu-area {
+    flex: 1;
+    text-align: center; /* Center the menu items */
+}
+
+.tj-menu-area nav ul {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    justify-content: center; /* Center the list items horizontally */
+    gap: 20px; /* Spacing between menu items */
+}
+
+.tj-menu-area nav ul li a {
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-size: 16px;
+    font-weight: 600;
+}
+
+/* Active Menu Item */
+.tj-menu-area nav ul li.current-menu-item a {
+    color: #1A6FEE;
+}
+
+/* Hover Effect */
+.tj-menu-area nav ul li a:hover {
+    color: rgba(198, 147, 32, 1);;
+}
+
+/* Contact Us Button */
+.tj-header-btn {
+    color: rgb(0, 0, 0); 
+    padding: 7px 20px; 
+    border-radius: 50px;
+    cursor: pointer; 
+    margin-right: 50px;
+}
+
+.tj-header-btn:hover {
+    background-color: rgba(198, 147, 32, 1);; 
+}
+/* Responsive Styles for Tablet */
+@media only screen and (min-width: 676px) and (max-width: 1000px) {
+    .menu-area {
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-top: 5px;
+    }
+    
+    .navbar.sticky {
+        background-color: #060056; 
+        color: black; 
+        box-shadow: 0 4px 2px -2px gray;
+    }
+
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+
+    .logo-area {
+        margin-right: auto; 
+    }
+
+    .info-item .tj-header-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+/* Hamburger Icon */
+.hamburger-menu {
+    display: none;
+    cursor: pointer;
+    z-index: 1001;
+    position: absolute;
+    top: 20px;
+    right: 15px;
+}
+
+.hamburger-menu .bar {
+    display: block;
+    width: 30px;
+    height: 4px;
+    margin: 5px auto;
+    background-color: rgb(34, 34, 34);
+    transition: all 0.3s ease;
+    align-items: center;
+}
+
+/* Mobile Dropdown Menu */
+.active {
+    display: block;
+}
+
+nav ul {
+    list-style: none;
+    padding: 0;
+}
+
+nav ul li {
+    margin: 10px 0;
+    text-align: center;
+}
+
+nav ul li a {
+    color: white;
+    font-size: 18px;
+    text-decoration: none;
+    display: block;
+    padding: 10px;
+}
+
+/* Responsive Styles for Mobile */
+.mobile-menu {
+    display: none;
+    position: absolute;
+    top: 100%;
+    right: 0;
+    background-color: #060056;
+    border-radius: 0 0 30px 30px;
+    width: 250px;
+    padding: 15px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+    overflow: hidden;
+    height: 0;
+    opacity: 0;
+    transition: height 0.5s ease, opacity 0.8s ease;
+}
+
+.mobile-menu.active {
+    display: block;
+    height: auto;
+    opacity: 1;
+}
+
+/* Responsive Styles for Mobile */
+@media (max-width: 575px) {
+    .navbar {
+        width: 100%; /* Full width for mobile */
+        margin: 0; /* Remove margin */
+        padding: 10px ;
+    }
+
+    .navbar.sticky {
+        border-radius: 0px;
+        margin: 0;
+    }
+
+    .hamburger-menu {
+        display: block; 
+    }
+
+    .mobile-menu {
+        right: 0; 
+        width: 100%; 
+        align-items: center;
+    }
+
+    .menu-area {
+        display: flex;
+        flex-direction: column;
+        align-items: center; 
+        justify-content: space-between;
+        padding-left: 15px;
+        padding-top: 5px;
+    }
+
+    /* Modify the logo alignment on mobile */
+    .logo-area {
+        order: 1;
+        margin-bottom: 5px;
+        align-self: flex-start; 
+    }
+    
+    .logo-area img {
+        max-height: 40px;
+    }
+
+    .tj-menu-area {
+        order: 2;
+        width: 100%;
+        text-align: center;
+    }
+
+    .info-item {
+        order: 3;
+        margin-top: 10px;
+    }
+
+    .tj-menu-area nav ul {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .info-item .tj-header-btn {
+        padding: 8px 15px;
+        font-size: 14px;
+    }
+}
+
+.language-contact {
+    display: flex;
+    align-items: center;
+    font-family: 'Open Sans', sans-serif;
+    margin-right: 10px; ;
+}
+
+.language-dropdown {
+    display: flex;
+    align-items: center;
+    margin-right: 20px;
+}
+
+.language-select {
+    border: none;
+    background: none;
+    font-size: 16px;
+    margin-left: 5px;
+    cursor: pointer;
+}
+
+.contact-us {
+    display: flex;
+    align-items: center;
+}
+
+.contact-us i {
+    margin-right: 8px;
+}
+
+.language-contact i {
+    font-size: 18px;
+    color: black;
+}
+
+.language-select:focus {
+    outline: none;
+}
+
+.language-select option {
+    background-color: white;
+    color: black;
+}
+
+.contact-us span {
+    font-size: 16px;
+    color: black;
+}

@@ -1,0 +1,197 @@
+/* Base Styles */
+.questions-section {
+  width: 90%;
+  margin: 0 auto;
+  text-align: left;
+  margin-top: 5vh !important;
+  margin-bottom: 1vh !important;
+}
+
+.questions-section h2 {
+  font-size: 1.5em;
+  margin-bottom: 20px;
+  font-weight: 600;
+}
+
+.questions-container {
+  display: flex;
+  gap: 20px;
+  flex-wrap: wrap; 
+}
+
+.question-card {
+  border: 1px solid #e0e0e0;
+  padding: 20px;
+  flex: 1;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.05);
+  border-radius: 8px;
+  width: 100%;
+  border-collapse: collapse;
+}
+
+.question-card td {
+  padding: 10px;
+  font-size: 1em;
+}
+
+.divider td {
+  height: 1px;
+  background-color: #e0e0e0;
+}
+
+.search-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+}
+
+.search-card button {
+  background-color: #000;
+  color: #fff;
+  border: none;
+  padding: 5px 20px;
+  margin: 10px 0;
+  cursor: pointer;
+  border-radius: 4px;
+  font-size: 1em;
+  transition: background-color 0.3s ease;
+}
+
+.search-card button:hover {
+  background-color: #444;
+
+}
+
+.search-card h3 {
+  margin: 5px 0;
+  font-weight: 600;
+  font-size: 1.2em;
+}
+
+.search-card p {
+  margin: 5px 0;
+}
+
+.question-card tr td {
+  border-bottom: 1px solid #ccc;
+}
+
+.question-card tr:last-child td {
+  border-bottom: none;
+}
+
+/* Responsive Styles */
+
+/* For extra small devices (phones, 600px and below) */
+@media (max-width: 600px) {
+  .questions-section {
+      width: 100%;
+      text-align: center; 
+  }
+
+  .questions-section h2 {
+      font-size: 1.2em;
+  }
+
+  .questions-container {
+      flex-direction: column; 
+      gap: 10px; 
+  }
+
+  .question-card {
+      padding: 15px;
+      box-shadow: none; 
+      width: 100%;
+  }
+
+  .search-card {
+      padding: 15px;
+  }
+
+  .search-card h3 {
+      font-size: 1em;
+  }
+
+  .search-card button {
+      padding: 8px 15px;
+      font-size: 0.9em;
+  }
+}
+
+/* For small devices (portrait tablets and large phones, 600px - 768px) */
+@media (min-width: 600px) and (max-width: 768px) {
+  .questions-section h2 {
+      font-size: 1.3em;
+  }
+
+  .questions-container {
+      flex-direction: column; 
+      gap: 15px;
+  }
+
+  .question-card {
+      padding: 18px;
+      box-shadow: 0 0 5px rgba(0, 0, 0, 0.1); 
+      width: 100%;
+  }
+
+  .search-card h3 {
+      font-size: 1.1em;
+  }
+
+  .search-card button {
+      padding: 10px 18px;
+  }
+}
+
+/* For medium devices (landscape tablets, 768px - 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+  .questions-section h2 {
+      font-size: 1.4em;
+  }
+
+  .questions-container {
+      flex-direction: row; 
+      gap: 20px;
+  }
+
+  .question-card {
+      padding: 20px;
+      width: 48%; 
+  }
+
+  .search-card h3 {
+      font-size: 1.2em;
+  }
+
+  .search-card button {
+      padding: 12px 20px;
+  }
+}
+
+/* For large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+  .questions-section h2 {
+      font-size: 1.5em;
+  }
+
+  .questions-container {
+      flex-direction: row; /* Remain side by side */
+      gap: 20px;
+  }
+
+  .question-card {
+      padding: 20px;
+      width: 30%; /* Display 3 cards in a row for desktops */
+  }
+
+  .search-card h3 {
+      font-size: 1.2em;
+  }
+
+  .search-card button {
+      padding: 12px 25px;
+  }
+}

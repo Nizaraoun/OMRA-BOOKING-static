@@ -1,0 +1,137 @@
+.footer {
+  background-color: #090909;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px;
+}
+
+.footer h5 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 5px;
+}
+
+.footer ul li a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer form {
+  margin-top: 10px;
+}
+
+.footer form input {
+  padding: 5px;
+  border: none;
+  background-color: #fff;
+  width: 100%; /* Ensure input takes full width */
+  border-radius: 5px; 
+  color: #b1b1b1;
+}
+
+.footer form button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #e4e7e9;
+  color: #000000;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 15px; /* Space between input and button */
+  display: inline-block; /* Change display to inline-block */
+  margin-left: 30%; /* Center horizontally */
+  margin-right: auto; /* Center horizontally */
+  border-radius: 5px; ;
+  
+}
+
+.footer {
+  background-color: #090909;
+  color: #fff;
+  padding: 20px;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding: 10px;
+}
+
+.footer h5 {
+  color: #fff;
+  margin-bottom: 10px;
+}
+
+.footer ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer ul li {
+  margin-bottom: 5px;
+}
+
+.footer ul li a {
+  color: #fff;
+  text-decoration: none;
+  transition: color 0.3s; /* Smooth color transition */
+}
+
+.footer ul li a:hover {
+  color: #C69320; /* Change link color on hover */
+}
+
+.footer form {
+  margin-top: 10px;
+}
+
+.footer form input {
+  padding: 5px;
+  border: none;
+  background-color: #fff;
+  width: 100%; /* Ensure input takes full width */
+  border-radius: 5px; 
+  color: #b1b1b1;
+  transition: border-color 0.3s, box-shadow 0.3s; /* Add transition for focus */
+}
+
+.footer form input:hover {
+  border-color: #C69320; /* Change border color on hover */
+  box-shadow: 0 0 5px rgba(198, 147, 32, 0.5); /* Add shadow effect */
+}
+
+.footer form input:focus {
+  outline: none; /* Remove default outline */
+  border-color: #C69320; /* Change border color on focus */
+  box-shadow: 0 0 5px rgba(198, 147, 32, 0.8); /* Add shadow effect on focus */
+}
+
+.footer form button {
+  padding: 5px 10px;
+  border: none;
+  background-color: #e4e7e9;
+  color: #000000;
+  cursor: pointer;
+  text-align: center;
+  margin-top: 15px; /* Space between input and button */
+  display: inline-block; /* Center the button */
+  margin-left: 30%; /* Center horizontally */
+  margin-right: auto; /* Center horizontally */
+  border-radius: 5px;
+  transition: background-color 0.3s, color 0.3s; /* Smooth transition */
+}
+
+.footer form button:hover {
+  background-color: #C69320; /* Change button background color on hover */
+  color: #fff; /* Change button text color on hover */
+}

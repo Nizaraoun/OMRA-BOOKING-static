@@ -1,0 +1,200 @@
+/* Base Styles */
+.note {
+    font-size: 3rem;
+    color: #09800d;
+    font-weight: 500;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.note-text {
+    font-size: 1.5rem;
+    color: #000000;
+}
+
+.reviews-count {
+    color: #717171;
+}
+
+.header-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.cadreComentaire {
+    height: 40vh;
+    background: #E6F7D1;
+    color: black;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin: 0 10px;
+    width: 25%!important;
+}
+
+.cadreComentaire p {
+    font-size: 1rem;
+    color: #333;
+}
+
+.cadreComentaire a {
+    font-size: 0.9rem;
+    color: #1E90FF;
+    text-decoration: none;
+}
+
+.carousel-inner .row-cols-3 {
+    justify-content: center;
+}
+
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    color: black;
+}
+
+.carousel-item {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Responsive Styles */
+
+/* For extra small devices (phones, 600px and below) */
+@media (max-width: 600px) {
+    .note {
+        font-size: 1.8rem;
+    }
+
+    .note-text {
+        font-size: 1.2rem;
+    }
+
+    .header-text {
+        font-size: 1rem;
+    }
+
+    .cadreComentaire {
+        width: 90%!important;  /* Make full width on small screens */
+        height: auto;          /* Remove fixed height to allow content to expand */
+        margin: 10px 0;
+        padding: 15px;
+    }
+
+    .cadreComentaire p {
+        font-size: 0.9rem;
+    }
+
+    .cadreComentaire a {
+        font-size: 0.8rem;
+    }
+
+    /* Make carousel items stack vertically */
+    .carousel-inner .row-cols-3 {
+        flex-direction: column;
+    }
+
+    .carousel-item {
+        flex-direction: column;
+    }
+}
+
+/* For small devices (portrait tablets and large phones, 600px - 768px) */
+@media (min-width: 600px) and (max-width: 768px) {
+    .note {
+        font-size: 2.2rem;
+    }
+
+    .note-text {
+        font-size: 1.3rem;
+    }
+
+    .header-text {
+        font-size: 1.1rem;
+    }
+
+    .cadreComentaire {
+        width: 70%!important;
+        margin: 15px 0;
+    }
+
+    .cadreComentaire p {
+        font-size: 1rem;
+    }
+
+    .cadreComentaire a {
+        font-size: 0.9rem;
+    }
+
+    /* Reduce the number of items displayed in the carousel */
+    .carousel-inner .row-cols-3 {
+        flex-wrap: wrap;
+    }
+
+    .carousel-item {
+        flex-direction: row;
+    }
+}
+
+/* For medium devices (landscape tablets, 768px - 992px) */
+@media (min-width: 768px) and (max-width: 992px) {
+    .note {
+        font-size: 2.5rem;
+    }
+
+    .note-text {
+        font-size: 1.4rem;
+    }
+
+    .header-text {
+        font-size: 1.2rem;
+    }
+
+    .cadreComentaire {
+        width: 50%!important;
+    }
+
+    .carousel-inner .row-cols-3 {
+        flex-wrap: wrap;
+    }
+
+    .carousel-item {
+        flex-direction: row;
+    }
+}
+
+/* For large devices (desktops, 992px and up) */
+@media (min-width: 992px) {
+    .note {
+        font-size: 3rem;
+    }
+
+    .note-text {
+        font-size: 1.5rem;
+    }
+
+    .header-text {
+        font-size: 1.2rem;
+    }
+
+    .cadreComentaire {
+        width: 25%!important;
+    }
+
+    .cadreComentaire p {
+        font-size: 1rem;
+    }
+
+    .cadreComentaire a {
+        font-size: 0.9rem;
+    }
+
+    /* Keep carousel layout horizontal */
+    .carousel-inner .row-cols-3 {
+        flex-direction: row;
+    }
+
+    .carousel-item {
+        flex-direction: row;
+    }
+}

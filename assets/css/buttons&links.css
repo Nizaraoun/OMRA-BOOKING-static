@@ -1,0 +1,93 @@
+.voir-plus-overlay {
+    position: relative;
+}
+
+.voir-plus-text {
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    padding: 5px 10px;
+    border-radius: 5px;
+}
+/* ++++++++++ */
+
+.Tarifsbtn {
+    background-color: rgba(71, 71, 71, 1);
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 0px;
+    margin-bottom: 20px;
+    font-weight: bold;
+    font-family: 'Open Sans', sans-serif;
+}
+
+/* ++++++++++ */
+
+.afficher-plus-link {
+    color: rgba(170, 118, 0, 1);
+    text-decoration: none;
+    font-size: 20px;
+    font-weight: 600;
+    padding-left: 100px; ;
+}
+/* ++++++++++ */
+
+.menubtn {
+    width: 100%;
+    font-size: 0.833vw; /* Converted from 1rem */
+    border: none;
+    background-color: rgba(198, 147, 32, 1);
+    color: white;
+    margin-bottom: 0!important;
+    padding: 10px 20px;
+}
+/* ++++++++++ */
+.search-button {
+    background-color: #000;
+    color: #fff;
+    padding: 8px 16px;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    gap: 5px;
+  }
+  /* ++++++++++++ */
+
+.Tarifsbtn:hover {
+    background-color: rgba(198, 147, 32, 1);
+}
+.questions-section .button-voir-autre{
+   
+        border: 1px solid #ccc;
+        padding: 10px 20px;
+        border-radius: 5px;
+        background-color: white;
+        color: #555;
+        font-size: 16px;
+        cursor: pointer;
+        transition: background-color 0.3s, color 0.3s;
+      
+    
+    
+}
+.button-voir-autre:hover {
+    background-color: #f2f2f2;
+    color: #333;
+  }
+
+
+@media (min-width: 768px) {
+    .menubtn, .Tarifsbtn {
+        width: auto;
+    }
+
+
+}
+

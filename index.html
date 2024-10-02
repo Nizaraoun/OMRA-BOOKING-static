@@ -1,0 +1,566 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Website Title</title>
+    <!-- style global -->
+    <link href="assets/css/styles.css" rel="stylesheet">
+    <!-- card hotel style  -->
+    <link href="assets/css/card_hotel.css" rel="stylesheet">
+    <!-- style el etablissement -->
+    <link href="assets/css/etablissement.css" rel="stylesheet">
+    <link rel="stylesheet" href="assets/css/all_tables.css">
+    <link rel="stylesheet" href="assets/css/buttons&links.css">
+    <link rel="stylesheet" href="assets/css/small_table.css">
+    <link rel="stylesheet" href="assets/css/input.css">
+    <link rel="stylesheet" href="assets/css/containers.css">
+    <link rel="stylesheet" href="assets/css/footer.css">
+    <link rel="stylesheet" href="assets/css/rating_container.css">
+    <link rel="stylesheet" href="assets/css/Commentaires.css">
+    <link rel="stylesheet" href="assets/css/qestionaire.css">
+
+    <!-- style lel amenities -->
+    <link href="assets/css/amenities.css" rel="stylesheet">
+
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;700&display=swap">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/flatpickr/4.6.9/flatpickr.min.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+
+</head>
+
+<body>
+
+    <style>
+        body,
+        html {
+            margin: 0;
+            padding: 0;
+        }
+
+        .container-fluid {
+            background-color: rgba(244, 235, 217, 1);
+            width: 100%;
+            height: 70px;
+            top: 0;
+            margin-top: 0 !important;
+            /* Remove top margin */
+
+        }
+    </style>
+    <div id="navbar"></div>
+    <!-- partie recherche -->
+    <div class="container-fluid d-none d-md-block">
+        <div class="d-flex justify-content-center">
+            <div class="search-bar col-10">
+                <div class="input-group">
+                    <i class="fas fa-map-marker-alt icon"></i>
+                    <input type="text" class="location-input" placeholder="Rechercher des lieux, hotel, etc.">
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-calendar-alt icon"></i>
+                    <input type="text" class="calendar-input" id="checkin" placeholder="22 avr. - 26 avr.">
+                </div>
+                <div class="input-group">
+                    <i class="fas fa-calendar-alt icon"></i>
+                    <input type="text" class="calendar-input" id="checkout" placeholder="22 avr. - 26 avr.">
+                </div>
+                <div class="input-group ">
+                    <i class="fas fa-users icon"></i>
+                    <select class="room-input">
+                        <option>1 chambre, 2 adultes</option>
+                        <option>2 chambres, 4 adultes</option>
+                        <option>1 chambre, 3 adultes</option>
+                    </select>
+                </div>
+                <button class="search-button">Rechercher <i class="fas fa-search"></i></button>
+            </div>
+        </div>
+    </div>
+
+    <!-- container -->
+    <!-- images and vd   -->
+    <div class="globalContainer">
+
+        <div class=" image_container d-none d-md-block">
+            <div class="row">
+                <div class="col-md-7">
+                    <img src="assets/images/omra/1.jfif" alt="Large Image" class="large-img">
+                </div>
+                <div class="col-6 col-md-5">
+                    <div class="row g-2">
+                        <div class="col-6">
+                            <img src="assets/images/omra/2.jfif" alt="Small Image 1" class="img-fluid small-img">
+                        </div>
+                        <div class="col-6">
+                            <img src="assets/images/omra/3.jfif" alt="Small Image 2" class="img-fluid small-img">
+                        </div>
+                        <div class="col-6">
+                            <img src="assets/images/omra/4.jfif" alt="Small Image 3" class="img-fluid small-img">
+                        </div>
+                        <div class="col-6 voir-plus-overlay">
+                            <img src="assets/images/omra/4.jfif" alt="Small Image 4" class="img-fluid small-img">
+                            <div class="voir-plus-text">Voir plus</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!--   hedhy kan phone wala tablet twalli carrosel -->
+        <div id="carouselExample" class="carousel slide d-md-none " data-bs-ride="carousel">
+            <div class="carousel-inner">
+                <div class="carousel-item active">
+                    <img src="assets/images/omra/1.jfif" class="d-block w-100" alt="Large Image">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/omra/2.jfif" class="d-block w-100" alt="Small Image 1">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/omra/3.jfif" class="d-block w-100" alt="Small Image 2">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/omra/4.jfif" class="d-block w-100" alt="Small Image 3">
+                </div>
+                <div class="carousel-item">
+                    <img src="assets/images/omra/4.jfif" class="d-block w-100" alt="Small Image 4">
+
+                </div>
+            </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselExample" data-bs-slide="prev">
+                <span class="carousel-control-prev-icon" aria-hidden="true"><i class="fas fa-chevron-left"
+                        style="color: black;"></i></span>
+                <span class="visually-hidden">Previous</span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselExample" data-bs-slide="next">
+                <span class="carousel-control-next-icon" aria-hidden="true"><i class="fas fa-chevron-right"
+                        style="color: black;"></i></span>
+                <span class="visually-hidden">Next</span>
+            </button>
+
+            <br>
+        </div>
+
+        <!-- Menu swip -->
+        <div class="row d-none d-md-flex align-items-end">
+            <div class="col-8">
+                <div class="row g-2">
+                    <div class="col">
+                        <button class="menubtn">Vue d'ensemble</button>
+                    </div>
+                    <div class="col">
+                        <a class="menuList" href="">Equipement et service</a>
+                    </div>
+                    <div class="col">
+                        <a class="menuList" href="">Chambre</a>
+                    </div>
+                    <div class="col">
+                        <a class="menuList" href="">Commentaires clients</a>
+                    </div>
+                </div>
+            </div>
+            <div class="col-4 text-end">
+                <button class="Tarifsbtn">Tarifs & Dispos</button>
+            </div>
+            <div class="col-12">
+                <hr class="divider"> <!-- Keep your existing divider class -->
+            </div>
+        </div>
+        
+
+            <!-- the equipement -->
+
+            <!-- lahna famma boucle for yafichi el equipment kol  -->
+            <div class="container mt-4">
+                <div class="row row-cols-2 row-cols-md-5 g-2" id="card-container">
+                    <!-- +++++++++++++++++++++++ -->
+                </div>
+            </div>
+
+
+            <!-- Affiche plus  -->
+            <div class="container mt-0">
+                <div class="row">
+                    <div class="col-12 text-end">
+                        <a href="" class="afficher-plus-link">
+                            Afficher plus <i class="fa fa-angle-down" aria-hidden="true"></i>
+                        </a>
+                    </div>
+                </div>
+            </div>
+            <br>
+            <br>
+
+            <!-- Swissotel Makkah -->
+            <div class="container">
+                <div class="container">
+                    <div class="row">
+                        <!-- parti 1 -->
+                        <div class="col-12 col-lg-8 mb-4">
+                            <header class="header">
+                                <h3>Swissotel Makkah</h3>
+                                <p>King Abdul Aziz Endowment Abraj Al Bait Complex, Om AlQura Street, 21955 La Mecque,
+                                    Arabie Saoudite</p>
+                                <a class="emplacement" href="">Excellent emplacement - voir la carte</a>
+                            </header>
+                            <div class="col mb-3 mx-0">
+                                <div class="card text-center p-0 shadow-sm">
+                                    <div class="card-body p-0">
+                                        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-2 row-cols-lg-2">
+                                            <div class="col p-2"> <!-- Adjust padding here -->
+                                                <i class="fas fa-home fa-1x"></i>
+                                                <h6 class="card-title">Heure d’arrivée</h6>
+                                                <h6 class="card-title">15 h 00</h6>
+                                            </div>
+                                            <div class="col p-2"> <!-- Adjust padding here -->
+                                                <i class="fas fa-home fa-1x"></i>
+                                                <h6 class="card-title">Heure d’arrivée</h6>
+                                                <h6 class="card-title">15 h 00</h6>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <!-- description of the hotel  (table) -->
+                            <div class="row row-cols-1 row-cols-sm-2 mb-5">
+                                <div class="col d-none d-md-block" style="background-color: rgba(239, 233, 218, 0.82);">
+                                    <h2>Localisation et Distance au Haram</h2>
+                                </div>
+                                <!-- boucle for display the card-description -->
+                                <div class="col descriptionCard" id="card-descreption">
+                                    <!-- Cards will be generated here by JavaScript -->
+                                </div>
+                            </div>
+                        </div>
+                        <!-- end partie 1 -->
+
+                        <!-- start partie 2 -->
+                        <div class="col-12 col-lg-4">
+
+                            <div class="container">
+                                <div class="row row-cols-1">
+                                    <div class="col firstContainer">
+                                        <div class="row row-cols-2">
+                                            <div class="col hotelDesc  ">
+                                                Chaîne hôtelière/marque
+                                                Swissôtel Hotels & Resorts
+                                            </div>
+                                            <div class="col">
+                                                <img class="logoHotel" src="assets/images/hotels/Swissotel.png" alt="">
+                                            </div>
+                                            <hr class="solid col-10">
+                                        </div>
+                                    </div>
+
+                                    <div class="col secondContainer">
+                                        <img src="assets/images/omra/makka.png" alt="">
+
+                                        <div class="scrollable-content">
+                                            <div class="location-info">
+                                                <h2>Quartier Haram :</h2>
+                                                <p>Abraj Al Bait Complex, La Mecque, Arabie Saoudite</p>
+                                                <a href="#" class="map-link">Voir sur la carte <span
+                                                        class="arrow">▼</span></a>
+                                                <div class="highlight">
+                                                    <span class="icon">📍</span> Emplacement exceptionnel ! - Au coeur
+                                                    de La
+                                                    Mecque !
+                                                </div>
+
+                                                <div class="nearby-info">
+                                                    <h3>Lieux à proximité :</h3>
+                                                    <ul>
+                                                        <li>Masjid al-Haram - <span>300 m</span></li>
+                                                    </ul>
+                                                    <h3>Distance par rapport à Mina (Jamarat) :</h3>
+                                                    <ul>
+                                                        <li>Mina (Jamarat) - <span>7 km</span></li>
+                                                    </ul>
+                                                    <h3>Mosquées à proximité :</h3>
+                                                    <ul>
+                                                        <li>Masjid Al-Haram - <span>300 m</span></li>
+                                                        <li>Masjid Al-Khalil Ibrahim - <span>1.5 km</span></li>
+                                                        <li>Masjid Al-Mashair - <span>5 km</span></li>
+                                                    </ul>
+                                                    <h3>Restaurants :</h3>
+                                                    <ul>
+                                                        <li>Al-Deyafa Restaurant - <span>100 m</span></li>
+                                                        <li>Al-Mashrabiah Restaurant - <span>150 m</span></li>
+                                                    </ul>
+                                                    <h3>Centres commerciaux :</h3>
+                                                    <ul>
+                                                        <li>Abraj Al Bait Mall - <span>50 m</span></li>
+                                                        <li>Abraj Al Bait Complex - <span>0 m</span></li>
+                                                    </ul>
+                                                </div>
+                                            </div>
+                                        </div>
+
+
+                                        <hr class="solid col-12">
+                                        <h6><a href="">VOIR LES LIEUX A PROXIMITE</a></h6>
+                                    </div>
+
+
+                                </div>
+                            </div>
+                        </div>
+
+                    </div>
+                </div>
+
+                <!-- end parti2 -->
+                <h4 style="color: rgb(27, 27, 27); font-weight: 700;"> Emplacement de l'hôtel
+                </h4>
+
+                <br>
+                <div class="container my-4 proximity-info ">
+                    <div class="row">
+                        <!-- First Column -->
+                        <div class="col-md-4">
+                            <h5 class="proximity-title">
+                                <i class="fas fa-map-marker-alt"></i> Zones à proximité :
+                            </h5>
+                            <ul class="proximity-list">
+                                <li>• Masjid al-Haram - 300m</li>
+                            </ul>
+                            <h5 class="proximity-title">
+                                <i class="fas fa-mosque"></i> Mosquées à proximité :
+                            </h5>
+                            <ul class="proximity-list">
+                                <li>• Masjid Al-Haram - 300m</li>
+                                <li>• Masjid Al-Khalil Ibrahim - 1.5km</li>
+                                <li>• Masjid Al-Mashair - 5km</li>
+                            </ul>
+                        </div>
+
+                        <!-- Second Column -->
+                        <div class="col-md-4">
+                            <h5 class="proximity-title">
+                                <i class="fas fa-utensils"></i> Restaurants et cafés :
+                            </h5>
+                            <ul class="proximity-list">
+                                <li>• Restaurant - Al Deyafa Restaurant - 30m</li>
+                                <li>• Restaurant - Al Deyafa Restaurant - 30m</li>
+                            </ul>
+                            <h5 class="proximity-title">
+                                <i class="fas fa-plane"></i> Aéroports les plus proches :
+                            </h5>
+                            <ul class="proximity-list">
+                                <li>• Aéroport international King Abdulaziz - 68km</li>
+                                <li>• Aéroport de Taïf - 71km</li>
+                            </ul>
+                        </div>
+
+                        <!-- Third Column -->
+                        <div class="col-md-4">
+                            <h5 class="proximity-title">
+                                <i class="fas fa-route"></i> Distance par rapport à Mina (Jamarat):
+                            </h5>
+                            <ul class="proximity-list">
+                                <li>• Mina (Jamarat) - 7km</li>
+                            </ul>
+                            <h5 class="proximity-title">
+                                <i class="fas fa-bus"></i> Transports en commun :
+                            </h5>
+
+                            <ul class="proximity-list">
+                                <li>• Train - Makkah Haramain High Speed Railway Station - 4km</li>
+                                <li>• Train - Station Jamarat (Mina 3) - 4.6km</li>
+                            </ul>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <br class="d-none d-md-block">
+            <!-- Les Chambres du Swissotel Makkah desc -->
+            <div class="row align-items-center">
+                <div class="col-12 col-md-6">
+                    <h4 style="color: rgb(27, 27, 27); font-weight: 700;">Les Chambres du Swissotel Makkah</h4>
+                </div>
+                <div class="col-12 col-md-6 text-md-end mt-3 mt-md-0 d-none d-md-block">
+                    <button class="Tarifsbtn">Voir les disponibilités</button>
+                </div>
+            </div>
+            <br>
+            <div class="col mb-3 mx-0">
+                <div class="card text-center p-2 shadow-sm">
+                    <div class="card-body p-0">
+                        <div class="row row-cols-2 row-cols-sm-2 row-cols-md-2 row-cols-lg-5">
+                            <div class="col p-2">
+                                <i class="fas fa-mosque fa-1x"></i>
+                                <h6 class="card-title">Espace de Prière</h6>
+                            </div>
+                            <div class="col p-2">
+                                <i class="fas fa-bell fa-1x"></i>
+                                <h6 class="card-title">Réveil pour Salat</h6>
+                            </div>
+                            <div class="col p-2">
+                                <i class="fas fa-heart fa-1x"></i>
+                                <h6 class="card-title">Équipement de repassage</h6>
+                            </div>
+                            <div class="col p-2">
+                                <i class="fas fa-bath fa-1x"></i>
+                                <h6 class="card-title">Salle de Bain Privée</h6>
+                            </div>
+                            <div class="col p-2">
+                                <i class="fas fa-pray fa-1x"></i>
+                                <h6 class="card-title">Tapis de prière</h6>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <br>
+                <div class="row">
+                    <div class="col-6 col-md-4 d-none d-md-block"
+                        style="background-color: rgba(239, 233, 218, 0.82); padding: 30px;">
+                        <h2>Commodités dans les
+                            Chambres</h2>
+                    </div>
+                    <div class="col-md-8" style="padding: 0;">
+                        <table class="center table-bordered w-100" id="description-table" style="margin: 0;">
+                            <!-- +++++ -->
+                        </table>
+                    </div>
+                </div>
+
+            </div>
+            <br>
+            <div class="alert" role="alert">
+                <h4 class="alert-heading">Cet établissement est très demandé !</h4>
+                <p>8 voyageurs ont réservé aujourd'hui..</p>
+            </div>
+            <h4 style="color: rgb(27, 27, 27); font-weight: 700; padding: 10px;">Choisissez votre chambre</h4>
+            <!-- ----------------------------------------------------------------
+      ----------------------------------------------------------- ---- -->
+            <div class="row filtre">
+                <div class="col-2 d-none d-md-block ">
+                    <h6>tous le chambre </h6>
+                </div>
+                <div class="col-1 d-none d-md-block">
+                    <h6>1 lit</h6>
+                </div>
+                <div class="col-1 d-none d-md-block">
+                    <h6>2 lit</h6>
+                </div>
+            </div>
+            <!-- 3 stitc card yet3abou men static data men hotel_chambre.js -->
+            <div class="container" id="hotel-container">
+                <div class="row hotel-description col-12 mx-auto">
+                    <!--  les hotel yet7tto auto lahné -->
+                </div>
+            </div>
+            <!-- ++++++++++++++++++++++++++l’établissement+++++++++++++++++++++++++++++++++++++ -->
+            <!-- el tab tet3aba mel data base also  -->
+            <h4 style="color: rgb(27, 27, 27); font-weight: 700; padding: 20px;">Conditions de l’établissement</h4>
+            <div class="container mt-5">
+                <div class="card etablissemen">
+                    <div class="card-body" id="infoContainer">
+                        <!-- yet7tto auto lahné -->
+                    </div>
+                </div>
+            </div>
+            <!-- +++++++++++++++++++++++++++++tableau+++++++++++++++++++++++++++++++++++++++++ -->
+            <h4 style="color: rgb(27, 27, 27); font-weight: 700; padding-left: 10px; padding-top: 30px;">Équipements de
+                l'établissement Swissotel Makkah</h4>
+
+            <div class="container my-5 amenities-section">
+                <div id="amenities-container" class="row text-center">
+                    <!-- The amenities yet7tto auto lahné -->
+                </div>
+            </div>
+
+
+            <!-- ++++++++++++++++++++++rating++++++++++++++++++++++++++++++++++++++++++++ -->
+
+            <div class="container mt-5">
+                <div class="row row-cols-auto ratings-summary">
+                    <div class="col rating-score">8.5</div>
+                    <div class="col rating-title">Très bien</div>
+                    <div class="col rating-number">23 350 expériences vécues</div>
+                    <div class="col afficher-plus-link ">
+                    <a href="#">Voir tous les commentaires</a>
+                    </div>
+                </div>
+                <h4 class="title">Catégories :</h4>
+                <div class="ratings-container" id="ratings-container">
+                    <!-- Ratings yet7tto auto lahné -->
+                </div>
+
+                <!-- ++++++++++++++++++++++++++++cmntrt+++++++++++++++++++++++++++++++++ -->
+                <div class="row  ">
+                    <div class="col-2 d-none d-md-block">
+                        <div class="row row-cols-1">
+                            <div class="col note">
+                                <span class="note-value">8.6</span>/10
+                            </div>
+                            <div class="col note-text">Excellent</div>
+                            <div class="col reviews-count">1007 avis vérifiés</div>
+                        </div>
+                    </div>
+                    <div class="col-10 d-none d-md-block">
+                        <div class="col-12 header-text">Ce que les personnes ayant séjourné ici ont adoré :</div>
+                        <div class="col-12">
+                            <div id="carouselExample" class="carousel slide" data-bs-ride="carousel">
+                                <div class="carousel-inner" id="comments-container">
+                                    <!-- Comments yet7tto auto lahné -->
+                                </div>
+
+                                <button class="carousel-control-next" type="button" data-bs-target="#carouselExample"
+                                    data-bs-slide="next">
+                                    <span class="carousel-control-next-icon" aria-hidden="true"><i
+                                            class="fas fa-chevron-right"></i></span>
+                                    <span class="visually-hidden">Next</span>
+                                </button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- +++++++++++++++++++++++questions section++++++++++++++++++++++++++++++++++++++++ -->
+            <div class="questions-section">
+                <h2>Questions des voyageurs</h2>
+                <div class="questions-container" id="questions-container"></div>
+                <!-- section for question+  -->
+                <br>
+                <button class="button-voir-autre">Voir les autres questions (20)</button>
+            </div>
+            <br>
+            <!-- +++++++++++++++++++++++++++++++the cardQuestion table ++++++++++++++++++++++++++++++++++++++ -->
+            <div class="row row-cols-1 row-cols-sm-2 mb-5">
+                <div class="col d-none d-md-block" style="background-color: rgba(239, 233, 218, 0.82);">
+                    <h2>Localisation et Distance au Haram</h2>
+                </div>
+                <!-- boucle for display the card-description -->
+                <div class="col descriptionCard" id="cardQuestion">
+                    <!-- +++++++++++ By js +++++++++++++ -->
+                </div>
+            </div>
+
+        </div>
+        <div id="footer"></div>
+
+        <!-- +++++++++++++++  java script +++++++++++++ -->
+        <script src="assets/js/navbar.js"></script>
+        <script src="assets/js/main.js"></script>
+        <script src="assets/js/Commentaires.js"></script>
+        <script src="/assets/js/hotel_chambre.js"></script>
+        <script src="/assets/js/etablissement.js"></script>
+        <script src="/assets/js/amenities.js"></script>
+        <script src="/assets/js/rating.js"></script>
+        <script src="assets/js/questionaire.js"></script>
+        <script src="assets/js/footer.js"></script>
+
+        <!--+++++++++++++++++++ for carrosel+++++++++++ -->
+        <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>

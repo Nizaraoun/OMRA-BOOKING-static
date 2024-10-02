@@ -1,0 +1,175 @@
+/* The Is The Global Container */
+.globalContainer{
+    margin-left: 13%; 
+    margin-right: 13%;
+}
+@media (max-width: 768px) {
+    .globalContainer{
+        margin-left: 0%; 
+        margin-right: 0%;
+    }
+}
+
+
+  
+  .icon {
+    color: #e0a96d;
+    flex-shrink: 0; 
+    display: flex;
+    align-items: center;
+    align-content: center;
+
+  }
+  
+
+
+
+/* images and vd  */
+.large-img {
+    height: 70%;
+    width: 100%;
+    object-fit: cover;
+}
+
+.small-img {
+    height: 100px;
+    object-fit: cover;
+    border-radius: 10px;
+}
+
+
+.image_container {
+    position: relative;
+    width: 100%;
+    overflow: hidden;
+    border-radius: 10px;
+    height: 60vh;
+    margin-top: 10px;
+}
+
+/* Menu swip */
+
+
+.menuList {
+    display: block;
+    text-align: center;
+    padding: 8px;
+    color: rgb(0, 0, 0);
+    text-decoration: none;
+    font-weight: 600;
+    font-size: 1vw; 
+}
+
+.menuList:hover {
+   color: rgba(198, 147, 32, 0.8);
+}
+
+
+
+
+
+@media (min-width: 768px) {
+ 
+    .menuList {
+        text-align: left;
+        padding: 5px 10px;
+    }
+}
+
+/* eqipement   */
+/* Partie 1 */
+
+/* decription */
+.carousel-control-prev-icon,
+.carousel-control-next-icon {
+    background-color: white; 
+    border-radius: 50%;
+    width: 40px; 
+    height: 40px; 
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2); 
+}
+
+.carousel-control-prev-icon {
+    background-image: none; 
+    color: black!important; 
+    font-size: 20px; 
+}
+
+.carousel-control-next-icon {
+    background-image: none; 
+    color: black;
+    font-size: 20px; 
+}
+
+.carousel-control-prev,
+.carousel-control-next {
+    width: 5%; 
+}
+
+
+
+
+/* Alert side */
+.alert {
+    background-color: rgba(253, 243, 243, 1)!important;
+    border-radius: 5px;
+    font-size: 0.833vw!important; 
+    font-family: 'Open Sans', sans-serif;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(209, 209, 209, 1);
+    padding: 0.4165vw!important; 
+}
+
+.alert-heading {
+    font-weight: 600;
+    color: rgba(202, 0, 0, 1)!important;
+    font-size: 0.9996vw!important; /* 1.2rem * 0.833 */
+}
+
+
+
+.scrollable-content {
+    flex-grow: 1; 
+    padding: 15px; 
+    box-sizing: border-box; 
+    overflow: auto; 
+}
+
+.scrollable-content::-webkit-scrollbar {
+    width: 0;
+    background: transparent; 
+}
+
+/* Hide scrollbar for Firefox */
+.scrollable-content {
+    scrollbar-width: none; /* For Firefox */
+    -ms-overflow-style: none; /* For Internet Explorer and Edge */
+}
+
+
+/* Custom Global  Scrollbar */
+::-webkit-scrollbar {
+    width: 10px; 
+    height: 10px; 
+    border-radius: 10px; 
+}
+
+::-webkit-scrollbar-track {
+    background-color: #d6d6d6; 
+}
+
+::-webkit-scrollbar-thumb {
+    background-color: rgba(244, 235, 217, 1); 
+    border-radius: 10px; 
+    border: 2px solid #d6d6d6; 
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background-color: rgba(230, 220, 200, 1); 
+}
+
+/* For Firefox */
+* {
+    scrollbar-width: thin;
+    scrollbar-color: rgba(244, 235, 217, 1) #d6d6d6; 
+}

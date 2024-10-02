@@ -1,0 +1,313 @@
+.custom-card {
+    text-align: center;
+    padding: 0;
+    box-shadow: 0px 1px 5px rgba(0, 0, 0, 0.1);
+    border-radius: 12px !important;
+    max-width: 34vh;
+    margin: auto;
+}
+
+.divider {
+    font-size: 30px;
+    display: flex;
+    align-items: center;
+    margin: 0!important;
+}
+
+.divider::before {
+    flex: 1;
+    content: ' ';
+    padding: 2px;
+    background-color:#C69320
+}
+
+.row>.col-8 {
+    padding-bottom: 0;
+    /* Remove bottom padding if necessary */
+}
+
+.custom-card-body {
+    padding: 0.4165vw; /* Converted from 0.5rem */
+}
+
+.custom-icon {
+    margin-bottom: 0.4165vw; /* Converted from 0.5rem */
+    font-size: 0.833vw; /* Converted from 1rem */
+}
+
+
+
+/* Partie 2 */
+.firstContainer{
+    width: 90%;
+    height: 35vh;
+    padding: 5px;
+}
+
+.secondContainer , .firstContainer {
+    margin: 7%;
+    border-radius: 12px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(209, 209, 209, 1);
+}
+
+.firstContainer hr.solid {
+    border-top: 2px solid rgb(140, 140, 140);
+    margin-top: 10px;
+    margin-left: 15px;
+}
+
+.secondContainer {
+    height: 92vh;
+    width: 90%;
+    border-radius: 12px;
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.1);
+    border: 1px solid rgba(209, 209, 209, 1);
+    display: flex;
+    flex-direction: column; /* Stack children vertically */
+    padding: 0!important;
+}
+
+.secondContainer img {
+    width: 100%; /* Ensure the image takes the full width */
+    object-fit: cover; /* Cover the area without distortion */
+    border-radius: 12px;
+}
+
+.scrollable-content {
+    flex-grow: 1; /* Allow this section to grow and fill the space */
+    padding: 15px; /* Padding inside the content area */
+    box-sizing: border-box; /* Ensure padding does not affect width */
+    overflow: hidden; /* No scrollbars */
+}
+
+.scrollable-content > * {
+    margin: 10px 0; /* Consistent spacing between elements */
+}
+
+/* Additional styles for the location-info content */
+.location-info {
+    font-family: Arial, sans-serif;
+    line-height: 1;
+    color: #333;
+}
+
+.location-info h2 {
+    font-size: 1.0vw; /* Converted from 1.2rem */
+    font-weight: 600;
+    margin-bottom: 10px;
+}
+
+.location-info p {
+    font-size: 0.7497vw; /* Converted from 0.9rem */
+    font-weight: 400;
+    margin-bottom: 10px;
+    color: rgba(70, 67, 67, 0.78);
+}
+
+.map-link {
+    color: #d78d06;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-block;
+    margin: 8px 0;
+}
+
+.highlight {
+    display: flex;
+    align-items: center;
+    background-color: #fff5db;
+    padding: 10px;
+    margin: 10px 0;
+    border-left: 4px solid #d78d06;
+}
+
+.highlight .icon {
+    font-size: 18px;
+    margin-right: 8px;
+}
+
+.nearby-info ul {
+    list-style-type: none;
+    padding-left: 10px;
+    margin-top: 0;
+}
+
+.nearby-info li {
+    margin-bottom: 4px;
+    display: flex;
+    justify-content: space-between;
+    color: rgba(33, 33, 33, 1);
+}
+
+.nearby-info h3 {
+    font-size: 0.833vw; /* Converted from 1rem */
+    font-weight: 600;
+    color: rgba(77, 77, 77, 1);
+    margin-bottom: 10px;
+}
+
+.nearby-info span {
+    color: #666;
+}
+
+.secondContainer h6 {
+    text-align: center; /* Center the text in the h6 */
+    margin: 0; /* Optional: Reset margin if needed */
+}
+
+.secondContainer h6 a {
+    font-size: 0.6664vw; /* Converted from 0.8rem */
+    font-weight: 600;
+    color: rgb(216, 138, 29);
+    font-family: 'Open Sans', sans-serif;
+    margin-top: 10px;
+    margin-bottom: 10px;
+    text-decoration: none;
+    display: inline-block; /* Make the link behave like a block for better centering */
+}
+
+.secondContainer h6 a:hover {
+    text-decoration: none;
+    color: rgb(0, 0, 0);
+}
+
+.logoHotel {
+    margin-top: 15%;
+    width: 17vh !important;
+    border-radius: 12px;
+    object-fit: contain;
+}
+@media (max-width: 768px) {
+    .firstContainer{
+        width: 100%;
+        height: 35vh;
+        padding: 5px;
+    }
+
+    .secondContainer , .firstContainer {
+        margin: 10px;
+    }
+
+    .secondContainer {
+        height: 100vh;
+        width: 100%;
+    }
+
+    .secondContainer h6 a {
+        font-size: 0.8rem;
+    }
+
+    .secondContainer img {
+        height: 50vh;
+    }
+
+    .logoHotel {
+        width: 50%;
+    }
+
+    .secondContainer h6 {
+        font-size: 1rem;
+    }
+
+    .secondContainer h6 a {
+        font-size: 1rem;
+    }
+    .location-info h2 {
+        font-size: 1.2rem;
+    }
+
+    .location-info p {
+        font-size: 0.9rem;
+    }
+    .nearby-info h3 {
+        font-size: 1rem;
+    }
+
+    .nearby-info span {
+        font-size: 0.8rem;
+    }
+
+    .highlight .icon {
+        font-size: 20px;
+    }
+     
+    .highlight {
+        padding: 10px;
+    }
+
+}
+
+/* bodyy  */
+.header {
+    text-align: left;
+    padding-bottom: 15% !important;
+}
+
+.header h3 {
+    font-size: 1.6161vw; /* Converted from 1.7rem */
+    font-weight: 700 !important;
+    line-height: 32.68px;
+}
+
+.header p {
+    color: rgba(88, 88, 88, 1);
+    font-size: 0.833vw; /* Converted from 0.8rem */
+    font-weight: 400;
+    margin-bottom: 0;
+    margin-top: 7px;
+}
+
+.header .emplacement {
+    color: rgba(198, 147, 32, 1);
+    font-size: 1vw;
+    font-weight: 700;
+
+}
+@media (max-width: 768px) {
+    .descriptionCard {
+        font-size: 0.75rem;
+    }
+
+
+
+    .descriptionCard h5 {
+        font-size: 1rem;
+    }
+
+    .descriptionCard p {
+        font-size: 0.8rem;
+    }
+
+    .header p {
+        font-size: 0.9rem;
+    }
+
+    .header .emplacement {
+        font-size: 1rem;
+    }
+    .header h3 {
+        font-size: 2rem;
+    }
+
+}
+/* Emplacement de l'hôtel */
+.proximity-info {
+    font-family: Arial, sans-serif; /* Use your preferred font */
+}
+
+.proximity-title {
+    padding-bottom: 4.165px; /* 5px * 0.833 */
+    margin-bottom: 12.5px; /* 15px * 0.833 */
+    font-weight: bold; /* Make the titles bold */
+}
+
+.proximity-list {
+    padding-left: 0; /* Remove default padding */
+    list-style-type: none; /* Remove bullet points */
+}
+
+.proximity-title i {
+    margin-right: 6.664px; /* 8px * 0.833 */
+    color: #232323b6; /* Optional: Change icon color */
+}
